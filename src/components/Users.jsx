@@ -66,6 +66,9 @@ const Users = ({ userPromise }) => {
           <div key={user._id}>
             {user.name} : {user.email}
             <br />
+            <Link to={`/update/${user._id}`}>
+              <button>Edit</button>
+            </Link>
             <button>
               {" "}
               <Link to={`/users/${user._id}`}>Details</Link>
